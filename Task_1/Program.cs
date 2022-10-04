@@ -5,13 +5,13 @@
 // a = 9; b = -3 -> нет 
 // a = -3 b = 9 -> да
 
-Console.WriteLine("Введите первое число:  ");
-int a = int.Parse(Console.ReadLine() ?? "0");
+Console.WriteLine("Введите первое число:  ");  // выводим фразу
+int a = Convert.ToInt32(Console.ReadLine());  // считываем из консоли
 Console.WriteLine("Введите второе число:  ");
-int b = int.Parse(Console.ReadLine() ?? "0");
-if (a==b*b)
+int b = Convert.ToInt32(Console.ReadLine());  // функция преобразовывает строку в целое число
+if (a==b*b) // условие
 {
-    Console.WriteLine($"Число {a} является квадратом {b}");
+    Console.WriteLine($"Число {a} является квадратом {b}");  // $ использует что число будет высвечиваться
 }
 else if (b==a*a)
 {
