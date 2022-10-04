@@ -5,9 +5,9 @@
 // -3 -> 9 
 // -7 -> 49
 
-int Prompt(string message);
+int Prompt(string massage);
 {
-    Console.Write(message);
+    Console.Write(massage);
     string inputString = Console.ReadLine();
     int value = Convert.ToInt32(inputString);
     return value;
